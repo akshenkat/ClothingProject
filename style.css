@@ -1,0 +1,364 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+.header {
+    width: 1600px;
+    height: 75px;
+    background-color: rgb(54, 48, 48);
+    display: flex;
+    justify-content: space-between;
+}
+
+.one { 
+    padding-top: 25px;
+    width: 110px;
+    height: 38px;
+    padding-left: 231px;
+    text-align: center;
+    background-color: rgb(54, 48, 48);
+}
+
+.two {
+    padding-top: 25px;
+    width: 159px;
+    height: 29px;
+    padding-right: 231px;
+    text-align: center;
+    background-color: rgb(54, 48, 48);
+}
+
+.content {
+    width: 1600px;
+    height: 764px;
+    background-color: rgb(185, 140, 182);
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.men {
+    width: 800px;
+    height: 764px;
+    background-color: rgb(185, 140, 182);; 
+
+}
+
+.text {
+    width: 405px;
+    height: 93px;
+    position: absolute;
+    top: 45%;
+    left: 65%;
+    
+  
+}
+
+.con {
+    width: 1300px;
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10 px;
+    margin: 0 auto;
+    padding-top: 100px;
+    margin-bottom: 50px;
+
+    
+}
+
+.paint {
+    width: 360px;
+    height: 260px;
+}
+
+.best {
+    width: 1300px;
+    height: 180px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+
+.best img {
+    width: 100%;
+}
+
+.mein {
+    width: 1600px;
+   
+}
+
+h3 {
+    text-align: center;
+}
+
+
+p {
+    text-align: center;
+}
+
+.top {
+    width: 1300px;
+    /* height: 1395px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    margin: 0 auto;
+    gap: 20px;
+    margin-top: 100px;
+
+} 
+
+.card {
+    width: 360px;
+    height: 587px;
+ 
+}
+
+.dif {
+  width: 360px;
+    height: 587px;
+    display: none;
+}
+
+button {
+    width: 212px;
+    height: 48px;
+    text-align: center;
+    border: 1px solid black;
+    color: palevioletred;
+    
+    
+}
+
+.but {
+    width: 212px;
+    height: 48px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.basket {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: absolute;
+}
+
+@media (min-width: 768px) and (max-width: 1024px)
+{
+  .top  {
+
+    width: 768px;
+    position: relative;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 2fr); */
+    margin: 0 auto;
+    column-gap: 2px;
+
+  }
+
+  .dif {
+    width: 384px;
+    height: 434px;
+    position: absolute;
+    background-color: gray;
+    display: inline-block;
+    left: 0%;
+    top: 33.5%;
+    opacity: 0.5;
+    
+  }
+
+  .content {
+    width: 770px;
+    height: 400px;
+    
+  }
+
+  .con {
+     width: 768px;
+  }
+
+  .best {
+    width: 768px;
+    margin-bottom: 50px;
+    height: 121px;
+
+    
+  }
+
+  .men {
+    width: 350px;
+    height: 400px;
+  }
+
+  .text {
+    width: 283px;
+    left: 61%;
+
+  }
+
+  .header {
+    width: 770px;
+  }
+
+  .one {
+    padding-left: 50px;
+  }
+
+  .two {
+    padding-right: 50px;
+  }
+
+  img.men {
+    width: 60%;
+  }
+
+  .mein {
+    width: 770px;
+   
+    
+  }
+
+  .con {
+    width: 770px;
+    height: 167px;
+    margin-bottom: 20px;
+  }
+
+  .paint {
+    width: 234px;
+    height: 167px;
+}
+
+p {
+    margin-bottom: 50px;
+}
+
+.card {
+    width: 384px;
+}
+
+.basket {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: absolute;
+  top: 42%;
+  left: 20%;
+}
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .basket {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 37.5%;
+    left: 37%;
+  }
+
+  .dif {
+    width: 359px;
+    height: 450px;
+    position: absolute;
+    background-color: gray;
+    display: inline-block;
+    left: 0%;
+    top: 33%;
+    opacity: 0.5;
+    
+  }
+
+
+.men {
+  visibility: hidden;
+}
+
+.content {
+  width: 375px;
+  height: 363px;
+
+
+}
+
+.mein {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.con {
+  width: 343
+  px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 30px;
+  justify-content: flex-start;
+}
+
+.paint {
+  width: 343px;
+  height: 247px;
+}
+.top {
+  width: 359px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.card {
+  width: 359px;
+  height: 580px;
+
+}
+
+.best {
+  width: 343px;
+  height: 111px;
+  margin: 0 auto;
+  
+}
+
+.header {
+  width: 375px;
+  height: 74px;
+
+}
+
+.text {
+  width: 263px;
+  height: 66px;
+  left: 15%;
+
+}
+
+.one {
+  padding-left: 20px;
+  width: 111px;
+  height: 38px;
+}
+
+.two {
+  padding-right: 20px;
+  width: 111px;
+  height: 38px;
+}
+
+.best img {
+  width: 343px;
+  height: 111px;
+}
+ h3 {
+  margin-top: 50px;
+ }
+}
