@@ -18,6 +18,7 @@ padding: 0;
     padding-left: 231px;
     text-align: center;
     background-color: rgb(54, 48, 48);
+    transition: 1s;
 }
 
 .two {
@@ -27,6 +28,17 @@ padding: 0;
     padding-right: 231px;
     text-align: center;
     background-color: rgb(54, 48, 48);
+    transition: 1s;
+}
+
+.one:hover {
+  width: 115px;
+  height: 45px;
+}
+
+.two:hover {
+  width: 170px;
+  height: 40px;
 }
 
 .content {
@@ -51,8 +63,14 @@ padding: 0;
     position: absolute;
     top: 45%;
     left: 65%;
+    transition: 1s;
     
   
+}
+
+.text:hover {
+  width: 430px;
+  height: 120px;
 }
 
 .con {
@@ -71,7 +89,14 @@ padding: 0;
 .paint {
     width: 360px;
     height: 260px;
+    transition: 1s;
 }
+
+.paint:hover {
+  width: 380px;
+  height: 280px;
+}
+
 
 .best {
     width: 1300px;
@@ -138,6 +163,13 @@ button {
     height: 48px;
     margin: 0 auto;
     margin-top: 100px;
+    transition: 1s;
+}
+
+.but:hover {
+  width: 250px;
+  height: 60px;
+  background-color: yellow;
 }
 
 .basket {
@@ -147,20 +179,177 @@ button {
   position: absolute;
 }
 
+.footerOne {
+  margin-top: 100px;
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-around;
+  width: 1600px;
+  height: 341px;
+  background-color: rgb(34, 31, 31);
+
+
+}
+
+.foot {
+  width: 360px;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+ align-items: center;
+ justify-content: space-between;
+ color: white;
+ 
+}
+
+.foot svg:hover path {
+  fill: yellow;
+
+}
+
+.foot svg:hover {
+  width: 60px;
+  height: 40px;
+  
+}
+
+.footerTwo {
+  width: 1600px;
+  height: 448px;
+  background-image: url(images/f.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 200px;
+
+}
+
+.footOne {
+  width: 359px;
+  height: 224px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.footOne p {
+  color:palevioletred;
+  transition: 0.3s;
+}
+
+.footOne p:hover {
+  color: blueviolet;
+  
+}
+
+.women:hover {
+  width: 110px;
+  height: 103px;
+  }
+
+.input:hover {
+  width: 370px;
+  height: 60px;
+  
+}
+
+.footerFree {
+  width: 1600px;
+  height: 79px;
+  background-color: rgb(34, 31, 31);
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+
+}
+
+.footerFree p {
+  color: aliceblue;
+  transition: 1s;
+}
+
+.footerFree p:hover {
+  color: yellow;
+}
+
+.footTwo {
+  display: flex;
+  width: 147px;  
+  height: 32px;
+ 
+}
+
+.icon:hover {
+  width: 35px;
+  height: 35px;
+  transition: 0.3s;
+}
+
+.icon:hover path {
+  fill: rgb(222, 232, 111);
+  opacity: 0.5;
+}
+
 @media (min-width: 768px) and (max-width: 1024px)
 {
+
+  .footerOne {
+    width: 768px;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+ 
+  }
+
+  .footerTwo {
+    padding-top: 50px;
+    width: 768px;
+    height: 693px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .foot p {
+    margin-bottom: 0px;
+  }
+
+  .footerFree {
+    width: 768px;
+    height: 79px; 
+    display: flex;
+    justify-content: space-around;
+  }
+
   .top  {
 
     width: 768px;
     position: relative;
     grid-template-columns: repeat(2, 1fr);
-    /* grid-template-rows: repeat(2, 2fr); */
     margin: 0 auto;
     column-gap: 2px;
 
   }
 
-  .dif {
+  .top:hover .dif {
     width: 384px;
     height: 434px;
     position: absolute;
@@ -201,6 +390,11 @@ button {
 
   }
 
+  .text:hover {
+    width: 295px;
+    height: 120px;
+  }
+
   .header {
     width: 770px;
   }
@@ -234,6 +428,12 @@ button {
     height: 167px;
 }
 
+.paint:hover {
+  width: 250px;
+  height: 190px;
+}
+
+
 p {
     margin-bottom: 50px;
 }
@@ -242,7 +442,7 @@ p {
     width: 384px;
 }
 
-.basket {
+.top:hover .basket {
   width: 100px;
   height: 100px;
   display: inline-block;
@@ -254,7 +454,34 @@ p {
 
 @media (min-width: 320px) and (max-width: 767px) {
 
-  .basket {
+  .footerOne {
+    width: 375px;
+    height: 610px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .footerTwo {
+    width: 375px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .footerFree {
+    width: 375px;
+    height: 143px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+  }
+
+  .top:hover .basket {
     width: 70px;
     height: 70px;
     display: inline-block;
@@ -263,7 +490,7 @@ p {
     left: 37%;
   }
 
-  .dif {
+  .top:hover .dif {
     width: 359px;
     height: 450px;
     position: absolute;
@@ -339,7 +566,13 @@ p {
   width: 263px;
   height: 66px;
   left: 15%;
+  transition: 1s;
 
+}
+
+.text:hover {
+  width: 280px;
+  height: 70px;
 }
 
 .one {
@@ -348,10 +581,20 @@ p {
   height: 38px;
 }
 
+.one:hover {
+  width: 130px;
+  height: 40px;
+}
+
 .two {
   padding-right: 20px;
   width: 111px;
   height: 38px;
+}
+
+.two:hover {
+  width: 130px;
+  height: 40px;
 }
 
 .best img {
